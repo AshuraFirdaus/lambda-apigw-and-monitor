@@ -2,7 +2,8 @@ import jwt
 
 def lambda_handler(event, context): 
 # Lambda function to authorize API requests using JWT
-    secret = 'PmvCtfr1Hy4mA5QhTARjywokZRh4KjEyGfkXdGvULMVMhJHj79h3L14CTwB5WN5n9PtMfdazGSgNRJlb97ni7GBlphKCo6rLT4SN36kBi7UIIkw6H8sSgS5WmmdcG7UT7t8LfIGbIxJ9nzEOH5uNiZhWFLQKdaNIHckEdF1E8cDfjDfbvrSENvLCq2NNfOYh5MOdDrXy5gmhl0de12T5VMvOeC9WlcT2M1wKjdSKZWUZwzivVN3xrZ4EUM3DIcv1rWVYeKSF8hp7SJbEhT52ntHwuUI1jxGvHF7XtVHtZXWUV8oKdbPTuVuZkVA8LQEKsuHnndNj8AGcmCxDp0yGiA=='
+    secret = 'FillInYourSecretHere'
+    # fill it with your secret key from the linux openssl rand command
 # This secret should be stored securely, e.g., in AWS Secrets Manager or Parameter Store.
     try:
         token = event.get('authorizationToken') 
