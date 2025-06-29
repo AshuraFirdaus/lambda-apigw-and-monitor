@@ -158,6 +158,62 @@ _![Lambda Authorizer testing successful reply from the VSCode Terminal](img/auth
 
 ---
 
+## Summary
+
+✅ PART 1: Creating the Lambda and Monitoring the Function Logs
+AWS Lambda was used as the core backend function written in Python.
+
+A function named dausFunction1 was created from scratch to return a simple message.
+
+The Lambda function was tested using a "Hello World" test event, and its execution logs were monitored through CloudWatch, which is automatically integrated with Lambda.
+
+📌 Summary: Lambda acted as the main compute resource and was paired with CloudWatch for observability.
+
+✅ PART 2: Connecting Lambda with the API Gateway
+The Lambda function (dausFunction1) was connected to API Gateway using a GET method.
+
+API Gateway served as the public HTTP endpoint, while Lambda handled the business logic and returned responses.
+
+📌 Summary: Lambda function acted as the backend handler for a REST API.
+
+✅ PART 3: Implementing API Canary
+A second Lambda function (dausFunction2) was created with a different message: "Greetings from Firdaus!".
+
+Canary deployment was configured on API Gateway to split traffic 50/50 between dausFunction1 and dausFunction2.
+
+This allowed gradual testing of the new version before fully promoting it to production.
+
+📌 Summary: Lambda was used in a versioned deployment setup with controlled traffic rollout.
+
+✅ PART 4: Enabling CORS
+Lambda remained the backend processor, but API Gateway was configured with an OPTIONS method to handle CORS preflight requests.
+
+This made it possible for front-end clients from different origins to access the Lambda-powered API securely.
+
+📌 Summary: Lambda worked with API Gateway to support cross-origin resource sharing.
+
+✅ PART 5: Controlling Access Using Lambda Authorizer
+A new Lambda function was created as a custom Lambda Authorizer to validate JWT tokens before allowing access to protected API endpoints.
+
+The authorizer parsed and verified tokens using the PyJWT library.
+
+It acted as a security layer, verifying authentication before forwarding the request to the actual Lambda function.
+
+📌 Summary: Lambda was used to implement authentication and access control with JWT.
+
+🔚 Overall Summary:
+In this project, AWS Lambda was used to:
+
+Handle serverless API logic (Part 1–2)
+
+Manage version control with canary deployment (Part 3)
+
+Support frontend access via CORS (Part 4)
+
+Implement secure access using JWT-based Lambda Authorizer (Part 5)
+
+---
+
 ## 👨‍💻 Author
 
 **Muhamad Firdaus**
