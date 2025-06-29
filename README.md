@@ -134,7 +134,17 @@ Client → API Gateway → Lambda Functions → (CloudWatch, JWT Auth)
 
 ## 📸 Screenshots
 
-_._
+_![Hello world message from the lambda](img/helloworld1.png)_
+
+_![Hello world message from the lambda with your name](img/helloworld2.png)_
+
+_![CORS testing successful reply](img/CORS.png)_
+
+_![CORS testing successful reply from the CMD](img/CORS2.png)_
+
+_![Lambda Authorizer testing successful reply from the AWS Console](img/authorizer.png)_
+
+_![Lambda Authorizer testing successful reply from the VSCode Terminal](img/authorizer2.png)_
 
 ---
 
