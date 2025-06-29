@@ -1,8 +1,10 @@
 # 🧩 Lambda API Gateway and Monitoring
 
-This project demonstrates how to build a fully serverless API architecture using **AWS Lambda**, **API Gateway**, and **CloudWatch Monitoring**, with additional features like **CORS**, **Canary Deployments**, and **JWT-based Lambda Authorizer**. (All the step by step to create this with images can be read on the Docs/PDF file)
+This project demonstrates how to build a fully serverless API architecture using **AWS Lambda**, **API Gateway**, and **CloudWatch Monitoring**, with additional features like **CORS**, **Canary Deployments**, and **JWT-based Lambda Authorizer**.
 
 ---
+
+## **ALL THE STEP BY STEP GUIDE TO CREATE THE PROJECT IN THIS REPO IS AVAILABLE AND CAN BE READ INSIDE THE Docs/PDF FILE**
 
 ## 📌 Table of Contents
 
