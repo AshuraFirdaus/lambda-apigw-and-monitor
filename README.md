@@ -45,8 +45,16 @@ Client → API Gateway → Lambda Functions → (CloudWatch, JWT Auth)
 
 - AWS Account
 - IAM permissions for Lambda, API Gateway, CloudWatch
-- Postman or curl for API testing
+- Tools such as Postman or Insomnia or use curl for API testing
 - Python 3 and pip
+
+---
+
+## Project Diagram
+
+_![API Gateway Lambda Integration](img/Integrate-APIGW-Lambda.png)_
+
+_![Lambda Authorization Diagram](img/lambda-authorization-diagram.png)_
 
 ---
 
